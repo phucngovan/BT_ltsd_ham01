@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+   <script>
+       let a=prompt("nhập vào tên ngôi sao :");
+       let arr1=["Polaris", "Aldebaran", "Deneb", "", "Altair", "Dubhe" , "Regulus"];
+       let arr2=["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+       let value =false;
+       let value2="";
+       function tim(str) {
+           for(let i=0;i<arr1.length;i++) {
+               if (arr1[i] == a) {
+                   value = true;
+                   value2 = alert(arr1[i] + " :" + arr2[i]);
+                   break;
+               }
+           }
+           if(value) {
+               alert(valVegaue2);
+           }else {
+               alert("không phải là ngôi sao !!");
+           }
+
+       }
+       tim(a);
+   </script>
+
+</body>
+</html>
